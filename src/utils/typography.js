@@ -1,17 +1,30 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
+import Bootstrap from "typography-theme-bootstrap"
 
-Wordpress2016.overrideThemeStyles = () => {
+
+Bootstrap.overrideThemeStyles = () => {
   return {
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
+      
     },
+    "a":{
+      color: "#ffffff",
+      
+      
+    }
   }
 }
 
-delete Wordpress2016.googleFonts
+delete Bootstrap.googleFonts
 
-const typography = new Typography(Wordpress2016)
+const typography = new Typography(
+  {
+    headerFontFamily: ['Armata', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+    bodyFontFamily: ['Armata', 'serif'],
+  },
+  Bootstrap
+)
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== `production`) {
