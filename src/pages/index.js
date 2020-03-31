@@ -16,8 +16,7 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <Layout location={location} title={siteTitle} subtitle={subtitle}>
-      <BackgroundSlider 
-       query={data}/>
+      <BackgroundSlider query={data}/>
        
       {/* <SEO title="All posts" /> */}
       {/* <Bio /> */}
