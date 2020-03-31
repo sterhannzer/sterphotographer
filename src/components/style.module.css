@@ -1,0 +1,15 @@
+.mysection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  }
+
+  
+  .Aligneritem {
+    /* max-width: 50%; */
+  }
+  
+  .Aligneritem2 {
+    align-self: flex-start;
+  }
