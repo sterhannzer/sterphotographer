@@ -12,37 +12,39 @@ const Layout = ({ location, title, children, subtitle }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <div className={[styles.Aligneritem, styles.Aligneritem2].join(' ')} >
-      <h3 
-        style={{
-          ...scale(0.3),
-          marginBottom: 0,
-          fontFamily: `Carme, Noto Sans`,
-          fontWeight: `bold`,
-          // marginTop: 430,
-        }}
-      >
-        <Link 
+      <div>
+      <div className={[styles.Aligneritem ].join(' ')}>
+        <h3 
           style={{
-            boxShadow: `none`,
-            textDecoration: `none`,
-            color: `#dcdcdc`,
-            fontStyle: `bold`,
-            marginTop: 0
+            ...scale(0.3),
+            marginBottom: 0,
+            fontFamily: `Carme, Noto Sans`,
+            fontWeight: `bold`
           }}
-          to={`/`}
         >
-          {title}
-        </Link>
-      </h3>
-      <div style={{
-        color: `#dcdcdc`,
-        fontWeight: `normal`,
-        fontFamily: `Carme, Noto Sans`,
-        fontSize: 12,
-        marginLeft: 42,
-        marginTop: 0
-      }}>{subtitle}</div>
+          <Link 
+            style={{
+              boxShadow: `none`,
+              textDecoration: `none`,
+              color: `#dcdcdc`,
+              fontStyle: `bold`
+            }}
+            to={`/`}
+          >
+            {title}
+          </Link>
+        </h3>
+      </div>
+
+      <div className={[styles.Aligneritem2 ].join(' ')} 
+      // style={{
+      //   color: `#dcdcdc`,
+      //   fontWeight: `normal`,
+      //   fontFamily: `Carme, Noto Sans`,
+      //   fontSize: 12,
+      //   //marginLeft: 42,
+      // }}
+      >{subtitle}</div>
       </div>
     )
   } else {
@@ -69,10 +71,10 @@ const Layout = ({ location, title, children, subtitle }) => {
   return (
     <div  className={styles.mysection}
       style={{
-        // marginLeft: `auto`,
-        // marginRight: `auto`,
-        // maxWidth: rhythm(24),
-        // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        maxWidth: rhythm(24),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
       <header >

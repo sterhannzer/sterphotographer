@@ -11,5 +11,11 @@
   }
   
   .Aligneritem2 {
-    align-self: flex-start;
+    color: #dcdcdc;
+    margin-left: auto ; 
+    font-weight: normal;
+    font-family: Carme, Noto Sans;
+    font-size: 0.8em;
+    padding-left: 3em;
+      
   }
