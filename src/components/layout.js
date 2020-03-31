@@ -15,8 +15,8 @@ const Layout = ({ location, title, children, subtitle }) => {
       <div className={[styles.Aligneritem, styles.Aligneritem2].join(' ')} >
       <h3 
         style={{
-          ...scale(0.7),
-          marginBottom: rhythm(0.2),
+          ...scale(0.3),
+          marginBottom: 0,
           fontFamily: `Carme, Noto Sans`,
           fontWeight: `bold`,
           // marginTop: 430,
@@ -27,7 +27,8 @@ const Layout = ({ location, title, children, subtitle }) => {
             boxShadow: `none`,
             textDecoration: `none`,
             color: `#dcdcdc`,
-            fontStyle: `bold`
+            fontStyle: `bold`,
+            marginTop: 0
           }}
           to={`/`}
         >
@@ -38,8 +39,9 @@ const Layout = ({ location, title, children, subtitle }) => {
         color: `#dcdcdc`,
         fontWeight: `normal`,
         fontFamily: `Carme, Noto Sans`,
-         ...scale(0.01),
-        marginLeft: 57,
+        fontSize: 12,
+        marginLeft: 42,
+        marginTop: 0
       }}>{subtitle}</div>
       </div>
     )
