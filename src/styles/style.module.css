@@ -3,11 +3,9 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  }
-
-  
-  .Aligneritem {
-    /* max-width: 50%; */
+  overflow-y: hidden;
+  max-height: 100vh;
+  max-width: 100%;
   }
   
   .Aligneritem2 {

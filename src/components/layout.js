@@ -2,7 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import "typeface-carme"
 
-import styles from "./style.module.css"
+import "../styles/global.css"
+import styles from "../styles/style.module.css"
 import { rhythm, scale } from "../utils/typography"
 
 const Layout = ({ location, title, children, subtitle }) => {
@@ -13,38 +14,32 @@ const Layout = ({ location, title, children, subtitle }) => {
   if (location.pathname === rootPath) {
     header = (
       <div>
-      <div className={[styles.Aligneritem ].join(' ')}>
-        <h3 
-          style={{
-            ...scale(0.3),
-            marginBottom: 0,
-            fontFamily: `Carme, Noto Sans`,
-            fontWeight: `bold`
-          }}
-        >
-          <Link 
+        <div className={[styles.Aligneritem ].join(' ')}>
+          <h3 
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `#dcdcdc`,
-              fontStyle: `bold`
+              ...scale(0.3),
+              marginBottom: 0,
+              fontFamily: `Carme, Noto Sans`,
+              fontWeight: `bold`
             }}
-            to={`/`}
           >
-            {title}
-          </Link>
-        </h3>
-      </div>
+            <Link 
+              style={{
+                boxShadow: `none`,
+                textDecoration: `none`,
+                color: `#dcdcdc`,
+                fontStyle: `bold`
+              }}
+              to={`/`}
+            >
+              {title}
+            </Link>
+          </h3>
+        </div>
 
-      <div className={[styles.Aligneritem2 ].join(' ')} 
-      // style={{
-      //   color: `#dcdcdc`,
-      //   fontWeight: `normal`,
-      //   fontFamily: `Carme, Noto Sans`,
-      //   fontSize: 12,
-      //   //marginLeft: 42,
-      // }}
-      >{subtitle}</div>
+        <div className={[styles.Aligneritem2 ].join(' ')}>
+          {subtitle}
+        </div>
       </div>
     )
   } else {
@@ -71,10 +66,11 @@ const Layout = ({ location, title, children, subtitle }) => {
   return (
     <div  className={styles.mysection}
       style={{
-        marginLeft: `auto`,
-        marginRight: `auto`,
-        maxWidth: rhythm(24),
-        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+        // marginLeft: `auto`,
+        // marginRight: `auto`,
+        // maxWidth: rhythm(24),
+        
+        // padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
       <header >
